@@ -1,0 +1,4 @@
+
+      
+    lt-proc -w '/mnt/d/loren/OneDrive - НИУ Высшая школа экономики/Documenti/Program/OOBOONTOO/GSoC/apertium-rgn/rgn.automorf.bin' | cg-conv -a -l| vislcg3 --trace -g '/mnt/d/loren/OneDrive - НИУ Высшая школа экономики/Documenti/Program/OOBOONTOO/GSoC/apertium-rgn/apertium-rgn.rgn.rlx' 
+  
