@@ -1,0 +1,93 @@
+Italian and rgn: `apertium-ita-rgn`
+===============================================================================
+
+This is an Apertium language pair for translating between Italian and
+rgn. What you can use this language package for:
+
+* Translating between Italian and rgn
+* Morphological analysis of Italian and rgn
+* Part-of-speech tagging of Italian and rgn
+
+For information on the latter two points, see subheading "For more
+information" below.
+
+Requirements
+-------------------------------------------------------------------------------
+
+You will need the following software installed:
+
+* lttoolbox (>= 3.3.0)
+* apertium (>= 3.3.0)
+* vislcg3 (>= 0.9.9.10297)
+* apertium-ita
+* apertium-rgn
+
+If this does not make any sense, we recommend you look at: www.apertium.org.
+
+Compiling
+-------------------------------------------------------------------------------
+
+Given the requirements being installed, you should be able to just run:
+
+```console
+$ ./configure
+$ make
+# make install
+```
+
+You can use `./autogen.sh` instead of `./configure` in case you're compiling
+from source. If you installed any prerequisite language packages using a
+`--prefix` with `./configure`, make sure to use the same `--prefix` when running
+`./configure` here.
+
+Testing
+-------------------------------------------------------------------------------
+
+If you are in the source directory after running make, the following
+commands should work:
+
+```console
+$ echo "TODO test sentence 1" | apertium -d . ita-rgn
+TODO test translated sentence 1
+
+$ echo "TODO test sentence 2" | apertium -d . rgn-ita
+TODO test translated sentence 2
+```
+
+After installing somewhere in `$PATH`, you should be able to do e.g.
+
+```console
+$ echo "TODO test sentence 1" | apertium ita-rgn
+TODO test translated sentence 1
+```
+
+Files and data
+-------------------------------------------------------------------------------
+
+* [`apertium-ita-rgn.ita-rgn.dix`](apertium-ita-rgn.ita-rgn.dix) - Bilingual dictionary
+* [`apertium-ita-rgn.ita-rgn.t1x`](apertium-ita-rgn.ita-rgn.t1x) - Chunking rules for translating into rgn
+* [`apertium-ita-rgn.rgn-ita.t1x`](apertium-ita-rgn.rgn-ita.t1x) - Chunking rules for translating into Italian
+* [`apertium-ita-rgn.ita-rgn.t2x`](apertium-ita-rgn.ita-rgn.t2x) - Interchunk rules for translating into rgn
+* [`apertium-ita-rgn.rgn-ita.t2x`](apertium-ita-rgn.rgn-ita.t2x) - Interchunk rules for translating into Italian
+* [`apertium-ita-rgn.ita-rgn.t3x`](apertium-ita-rgn.ita-rgn.t3x) - Postchunk rules for translating into rgn
+* [`apertium-ita-rgn.rgn-ita.t3x`](apertium-ita-rgn.rgn-ita.t3x) - Postchunk rules for translating into Italian
+* [`apertium-ita-rgn.ita-rgn.lrx`](apertium-ita-rgn.ita-rgn.lrx) - Lexical selection rules for translating into rgn
+* [`apertium-ita-rgn.rgn-ita.lrx`](apertium-ita-rgn.rgn-ita.lrx) - Lexical selection rules for translating into Italian
+* [`modes.xml`](modes.xml) - Translation modes
+
+For more information
+-------------------------------------------------------------------------------
+
+* http://wiki.apertium.org/wiki/Installation
+* http://wiki.apertium.org/wiki/apertium-ita-rgn
+* http://wiki.apertium.org/wiki/Using_an_lttoolbox_dictionary
+
+Help and support
+-------------------------------------------------------------------------------
+
+If you need help using this language pair or data, you can contact:
+
+* Mailing list: apertium-stuff@lists.sourceforge.net
+* IRC: `#apertium` on irc.freenode.net (irc://irc.freenode.net/#apertium)
+
+See also the file [`AUTHORS`](AUTHORS), included in this distribution.

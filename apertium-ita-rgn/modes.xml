@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<modes>
+
+  <!-- ita → rgn -->
+
+  <mode name="ita-rgn" install="yes" gendebug="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="ita-rgn.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="ita-rgn.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="ita-rgn.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="ita-rgn.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="ita-rgn.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ita-rgn.ita-rgn.t1x"/>
+        <file name="ita-rgn.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ita-rgn.ita-rgn.t2x"/>
+        <file name="ita-rgn.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ita-rgn.ita-rgn.t3x"/>
+        <file name="ita-rgn.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="ita-rgn.autogen.bin"/>
+      </program>
+
+      <program name="lt-proc -p">
+        <file name="ita-rgn.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+
+  <!-- rgn → ita -->
+
+  <mode name="rgn-ita" install="yes" gendebug="yes">
+    <pipeline>
+      <program name="lt-proc -w">
+        <file name="rgn-ita.automorf.bin"/>
+      </program>
+
+
+      <program name="cg-proc -w">
+        <file name="rgn-ita.rlx.bin"/>
+      </program>
+      <program name="apertium-tagger -g $2">
+        <file name="rgn-ita.prob"/>
+      </program>
+      <program name="apertium-pretransfer"/>
+      <program name="lt-proc -b">
+        <file name="rgn-ita.autobil.bin"/>
+      </program>
+      <program name="lrx-proc">
+        <file name="rgn-ita.autolex.bin"/>
+      </program>
+      <program name="apertium-transfer -b">
+        <file name="apertium-ita-rgn.rgn-ita.t1x"/>
+        <file name="rgn-ita.t1x.bin"/>
+      </program>
+      <program name="apertium-interchunk">
+        <file name="apertium-ita-rgn.rgn-ita.t2x"/>
+        <file name="rgn-ita.t2x.bin"/>
+      </program>
+      <program name="apertium-postchunk">
+        <file name="apertium-ita-rgn.rgn-ita.t3x"/>
+        <file name="rgn-ita.t3x.bin"/>
+      </program>
+      <program name="lt-proc $1">
+        <file name="rgn-ita.autogen.bin"/>
+      </program>
+
+      <program name="lt-proc -p">
+        <file name="rgn-ita.autopgen.bin"/>
+      </program>
+    </pipeline>
+  </mode>
+</modes>
+

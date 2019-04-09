@@ -1,0 +1,2 @@
+
+  lt-proc -w '/mnt/d/loren/OneDrive - НИУ Высшая школа экономики/Documenti/Program/OOBOONTOO/GSoC/apertium-ita-rgn/ita-rgn.automorf-untrimmed.bin' | cg-proc -w '/mnt/d/loren/OneDrive - НИУ Высшая школа экономики/Documenti/Program/OOBOONTOO/GSoC/apertium-ita-rgn/ita-rgn.rlx.bin' | apertium-tagger -g $2 '/mnt/d/loren/OneDrive - НИУ Высшая школа экономики/Documenti/Program/OOBOONTOO/GSoC/apertium-ita-rgn/ita-rgn.prob' | apertium-pretransfer| lt-proc -b '/mnt/d/loren/OneDrive - НИУ Высшая школа экономики/Documenti/Program/OOBOONTOO/GSoC/apertium-ita-rgn/ita-rgn.autobil.bin' 
