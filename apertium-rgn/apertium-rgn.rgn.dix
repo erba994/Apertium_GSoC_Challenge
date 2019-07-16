@@ -198,15 +198,15 @@
   <e>       <p><l>j'è</l>      <r>èsar<s n="vbser"/><s n="pri"/><s n="p3"/><s n="pl"/></r></p></e>
   </pardef>
 	<!-- Names -->
-<pardef n="chès/a__n">
-      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="attr"/></r></p></e>
-      <e><p><l>a</l><r>a<s n="n"/><s n="f"/><s n="sg"/></r></p></e>
-      <e><p><l>i</l><r>a<s n="n"/><s n="f"/><s n="pl"/></r></p></e>
+<pardef n="cis/__n">
+      <e><p><l></l><r><s n="n"/><s n="f"/><s n="attr"/></r></p></e>
+      <e><p><l></l><r><s n="n"/><s n="f"/><s n="sg"/></r></p></e>
+      <e><p><l>i</l><r><s n="n"/><s n="f"/><s n="pl"/></r></p></e>
     </pardef>
-<pardef n="zard/é/in__n">
-      <e><p><l>éin</l><r>éin<s n="n"/><s n="m"/><s n="attr"/></r></p></e>
-      <e><p><l>éin</l><r>éin<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
-      <e><p><l>èin</l><r>éin<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
+<pardef n="zrd/é/n__n">
+      <e><p><l>én</l><r>én<s n="n"/><s n="m"/><s n="attr"/></r></p></e>
+      <e><p><l>én</l><r>én<s n="n"/><s n="m"/><s n="sg"/></r></p></e>
+      <e><p><l>èn</l><r>én<s n="n"/><s n="m"/><s n="pl"/></r></p></e>
     </pardef>
 </pardefs>
 
@@ -220,8 +220,8 @@
 	<!--vbser -->
 	<e lm="èsar">          <par n="/èsar__vbser"/></e>
 	<!-- Names -->
-    <e lm="chèsa"><i>chès</i><par n="chès/a__n"/></e>
-	<e lm="zardéin"><i>zard</i><par n="zard/é/in__n"/></e>
+    <e lm="cis"><i>cis</i><par n="cis/__n"/></e>
+	<e lm="zrdén"><i>zrd</i><par n="zrd/é/n__n"/></e>
   </section>
   
   <section id="apostrophes" type="postblank">
